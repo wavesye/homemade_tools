@@ -78,10 +78,10 @@ if __name__=='__main__':
     用户请修改以下的三个参数！！！！！！
     '''
     # 选择计算斜率的时间
-    calculating_points = [10, 100]  # 意味着在10和200两个位置计算斜率（分别对应两个时间t的位置）
+    calculating_points = [10, 100]  # 意味着在10和100两个位置计算斜率（分别对应两个时间t的位置）
     # 时间
-    t = np.array([0, 184, 319, 526, 867, 1198, 1877, 2315, 3144])
-    # 对应时间的浓度
+    t = np.array([0, 184, 319, 526, 867, 1198, 1877, 2315, 3144]) 
+    # 不同时间对应的浓度
     c = np.array([2.33, 2.08, 1.91, 1.67, 1.36, 1.11, 0.72, 0.55, 0.34])
 
     n,time,r,concentration = reaction_order()
@@ -90,9 +90,3 @@ if __name__=='__main__':
     print('c[0]:',c[0])
     k(time=time,concentration=concentration,r=r,initial_concentration=c[0])
     plt.show()
-'''
-    #计算k值
-    concentration, r = plotting(t, c, calculating_points[0])
-    k = -r/np.power(concentration,n)
-    print('反应速率k=', k)
-'''
