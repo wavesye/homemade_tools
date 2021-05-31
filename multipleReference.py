@@ -1,3 +1,4 @@
+#本代码根据已有的文章名搜索文章的引用信息
 from selenium import webdriver
 from selenium.webdriver.common.by import By #To locate element
 from selenium.webdriver.support.ui import WebDriverWait
