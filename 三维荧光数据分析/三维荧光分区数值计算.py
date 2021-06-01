@@ -176,11 +176,9 @@ def read_folder(folder):
         data_input(Number, EX, EM, Height)
         print('\n\n')
         
-    
-read_folder('/Users/apple/Downloads/20210121')
+if __name__ == '__main__':  
+    read_folder('/Users/apple/Downloads/20210121') #计算各分区荧光强度
 
-#Number, EX, EM, Height = openfile('/Users/apple/Downloads/20210121/1-1_20210121_103155(FD3).TXT')
-#data_input(Number, EX, EM, Height)
 
 
 # In[ ]:
