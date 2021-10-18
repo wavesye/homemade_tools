@@ -1,1 +1,11 @@
-#excel
+# Excel复制粘贴时去掉空行
+filepath = '/Users/apple/Desktop/test.txt'
+try:
+	fin = open(filepath)
+except:
+	print('error')
+count=0
+for line in fin:
+	if count%3==0:
+		print(line, end='')
+	count = count + 1
